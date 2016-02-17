@@ -22,6 +22,7 @@ default: &default
   pool: 5
 
 development:
+  database: black_belt_rails_development
   adapter: postgresql
   encoding: unicode
   username: ubuntu
@@ -60,6 +61,7 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
+  database: black_belt_rails_development
   adapter: postgresql
   encoding: unicode
   username: ubuntu
@@ -87,6 +89,7 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
+  database: black_belt_rails_development
   adapter: postgresql
   encoding: unicode
   username: ubuntu
